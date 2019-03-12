@@ -64,23 +64,24 @@ and would return the following result:
 The available columns are as follows:
 
 **name (data type) [unit]** 
-`date (datetime)` 
-`interval (integer)` 
-`interior_temperature (float) [C]` 
-`interior_humidity (float) [%]` 
-`exterior_temperature (float) [C]` 
-`exterior_humidity (float) [%]` 
-`relative_pressure (float) [hpa]` 
-`absolute_pressure (float) [hpa]` 
-`wind_speed (float) [km/h]` 
-`wind_peaks (float) [km/h]` 
-`wind_direction (string) [cardinal]` 
-`dew_point (float) [C]` 
-`windchill (float) [C]` 
-`rain_hour (float) [mm]` 
-`rain_day (float) [mm]` 
-`rain_week (float) [mm]` 
-`rain_month (float) [mm]` 
-`rain_total (float) [mm]` 
+
+- `date (datetime)`
+- `interval (integer)`
+- `interior_temperature (float) [C]`
+- `interior_humidity (float) [%]`
+- `exterior_temperature (float) [C]`
+- `exterior_humidity (float) [%]`
+- `relative_pressure (float) [hpa]`
+- `absolute_pressure (float) [hpa]`
+- `wind_speed (float) [km/h]`
+- `wind_peaks (float) [km/h]`
+- `wind_direction (string) [cardinal]`
+- `dew_point (float) [C]`
+- `windchill (float) [C]`
+- `rain_hour (float) [mm]`
+- `rain_day (float) [mm]`
+- `rain_week (float) [mm]`
+- `rain_month (float) [mm]`
+- `rain_total (float) [mm]`
 
 Enjoy! :)
