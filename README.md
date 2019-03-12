@@ -3,9 +3,9 @@ Weather data parser for project "Väderlek"
 
 Runs on Rails 5.2.2 and Ruby 2.3.4
 
-#API documentation
+##API documentation
 
-##Usage
+######Usage
 
 The API will return a JSON array containg the specified data.
 
