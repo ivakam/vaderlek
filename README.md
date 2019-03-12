@@ -63,8 +63,7 @@ and would return the following result:
 
 The available columns are as follows:
 
-**name (data type) [unit]** 
-
+- **name (data type) [unit]** 
 - `date (datetime)`
 - `interval (integer)`
 - `interior_temperature (float) [C]`
