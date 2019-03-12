@@ -9,7 +9,7 @@ class WeatherDataController < ApplicationController
         data = nil
         filter_limit = params[:limit]
         if params[:q].present?
-            data = WeatherData.select(params[:q].gsub(/\s+/, ', ')).limit(filter_limit)
+            data = WeatherData.select(params[:q].gsub(/\s+|\%20/, ', ')).limit(filter_limit)
         else
             data = WeatherData.all.limit(filter_limit)
         end
