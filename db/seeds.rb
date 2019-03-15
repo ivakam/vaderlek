@@ -1,9 +1,15 @@
-require 'json'
+require 'csv'
 
-weather_file = File.open(Rails.root.join('weather_data.json'))
-weather_data = JSON.load(weather_file)
-
-weather_data.each do | d |
+weather_file = Dir[Rails.root.join('weather_data*.csv')].first
+weather_data = CSV.parse(File.open(weather_file, 'r:UTF-16'), headers: true, encoding: 'UTF-16').map(&:to_a)
+weather_data.each do | raw |
+    d = {}
+    keys = raw[0][0].split(/\t/)
+    values = raw[0][1].split(/\t/)
+    keys.each_with_index do | k, i |
+        d[k] = values[i]
+    end
+    p "FULL DATA: #{d}"
     w = WeatherData.new
     w.date = d['Tid']
     w.interval = d['Intervall']
